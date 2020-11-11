@@ -1,0 +1,4 @@
+update NOVI-PREFIX_usermeta set meta_key = 'NOVI-PREFIX_capabilities' where meta_key = 'STARI-PREFIX_capabilities';
+update NOVI-PREFIX_usermeta set meta_key = 'NOVI-PREFIX_user_level' where meta_key = 'STARI-PREFIX_user_level';
+update NOVI-PREFIX_usermeta set meta_key = 'NOVI-PREFIX_autosave_draft_ids' where meta_key = 'STARI-PREFIX_autosave_draft_ids';
+update NOVI-PREFIX_options set option_name = 'NOVI-PREFIX_user_roles' where option_name = 'STARI-PREFIX_user_roles';
