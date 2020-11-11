@@ -1,0 +1,10 @@
+SELECT COUNT (*), autoload  FROM wp_options GROUP BY autoload
+## ili
+SELECT COUNT(CASE WHEN autoload = 'yes' THEN 1 END) FROM wp_options;
+
+SHOW INDEX FROM wp_options;
+## add index
+CREATE INDEX autoloadindex ON wp_options(autoload, option_name);
+
+## drop index
+DROP INDEX autoloadindex ON wp_options
